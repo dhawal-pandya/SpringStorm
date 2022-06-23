@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/SpringStorm/static/css/main.fb8b8175.css",
+    "main.js": "/SpringStorm/static/js/main.ff2c2904.js",
+    "static/media/haze.gif": "/SpringStorm/static/media/haze.ab421190423b985e5c93.gif",
+    "static/media/open.gif": "/SpringStorm/static/media/open.6c73369f978da884e1d6.gif",
+    "static/media/thunder.gif": "/SpringStorm/static/media/thunder.0be411a5afa260832db8.gif",
+    "static/media/clear.gif": "/SpringStorm/static/media/clear.e754a312d074413424cd.gif",
+    "static/media/clouds.gif": "/SpringStorm/static/media/clouds.119f35ebcb9741c23d5a.gif",
+    "static/media/rain.gif": "/SpringStorm/static/media/rain.f15997a10aa7ee931b18.gif",
+    "static/media/rain light.gif": "/SpringStorm/static/media/rain light.169cbaa32f50c0d7d0a6.gif",
+    "static/media/snow.gif": "/SpringStorm/static/media/snow.cc41ff98a720087f1184.gif",
+    "index.html": "/SpringStorm/index.html",
+    "main.fb8b8175.css.map": "/SpringStorm/static/css/main.fb8b8175.css.map",
+    "main.ff2c2904.js.map": "/SpringStorm/static/js/main.ff2c2904.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb8b8175.css",
+    "static/js/main.ff2c2904.js"
+  ]
+}
