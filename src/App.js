@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import ErrorModal from './Components/ErrorModal';
 
 const api = {
   key: '90d3f2fb4e744ba8109885a68128b095',
@@ -9,6 +10,7 @@ const api = {
 function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
+  const [error, setError] = useState(false);
 
   const search = (evt) => {
     if (evt.key === 'Enter') {
@@ -17,7 +19,9 @@ function App() {
         .then((result) => {
           setWeather(result);
           setQuery('');
-          console.log(result);
+          if (typeof result.message === 'string') setError(true);
+          else setError(false);
+          // console.log(result);
         });
     }
   };
@@ -55,6 +59,11 @@ function App() {
     return ` ${day} ${date} ${month} ${year}`;
   };
 
+  const errorHandler = () => {
+    setError(false);
+    // console.log('I was clicked');
+  };
+
   return (
     <div
       className={
@@ -89,7 +98,12 @@ function App() {
           />
         </div>
 
-        {typeof weather.main != 'undefined' ? (
+        {error ? (
+          <ErrorModal
+            errorState={(error, setError)}
+            onErrorHandle={errorHandler}
+          />
+        ) : typeof weather.main != 'undefined' ? (
           <>
             <div className='location-box'>
               <div className='location'>

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.error-page {
+  background-color: black;
+  color: #fff;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.error-box {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  margin: 50% 10%;
+  z-index: 2;
+}
+
+.text {
+  color: #000;
+
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.title {
+  font-size: 30px;
+  font-weight: 900;
+}
+.errorMsg {
+  font-size: 25px;
+  font-weight: 400;
+}
