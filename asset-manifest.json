@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SpringStorm/static/css/main.a7a17134.css",
+    "main.css": "/SpringStorm/static/css/main.dcb4bbcc.css",
     "main.js": "/SpringStorm/static/js/main.70505954.js",
     "static/media/haze.gif": "/SpringStorm/static/media/haze.ab421190423b985e5c93.gif",
     "static/media/open.gif": "/SpringStorm/static/media/open.6c73369f978da884e1d6.gif",
@@ -11,11 +11,11 @@
     "static/media/rain light.gif": "/SpringStorm/static/media/rain light.169cbaa32f50c0d7d0a6.gif",
     "static/media/snow.gif": "/SpringStorm/static/media/snow.cc41ff98a720087f1184.gif",
     "index.html": "/SpringStorm/index.html",
-    "main.a7a17134.css.map": "/SpringStorm/static/css/main.a7a17134.css.map",
+    "main.dcb4bbcc.css.map": "/SpringStorm/static/css/main.dcb4bbcc.css.map",
     "main.70505954.js.map": "/SpringStorm/static/js/main.70505954.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7a17134.css",
+    "static/css/main.dcb4bbcc.css",
     "static/js/main.70505954.js"
   ]
 }
