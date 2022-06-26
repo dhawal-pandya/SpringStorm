@@ -137,16 +137,16 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className='origin'>
+              Made with ❤️ by{' '}
+              <a href='https://twitter.com/pandya_dhawal'>Dhawal Pandya</a>
+            </div>
           </>
         ) : (
           <>
             <div className='message'>Enter a city name...</div>
           </>
         )}
-        <div className='origin'>
-          Made with ❤️ by{' '}
-          <a href='https://twitter.com/pandya_dhawal'>Dhawal Pandya</a>
-        </div>
       </main>
     </div>
   );
