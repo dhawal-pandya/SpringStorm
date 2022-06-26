@@ -21,7 +21,7 @@ function App() {
           setQuery('');
           if (typeof result.message === 'string') setError(true);
           else setError(false);
-          // console.log(result);
+          console.log(result);
         });
     }
   };
@@ -105,17 +105,37 @@ function App() {
           />
         ) : typeof weather.main != 'undefined' ? (
           <>
-            <div className='location-box'>
-              <div className='location'>
-                {weather.name}, {weather.sys.country}
+            <div className='classify'>
+              <div className='side1'>
+                <div className='location-box'>
+                  <div className='location'>
+                    {weather.name}, {weather.sys.country}
+                  </div>
+                  <div className='date'>{dateBuilder(new Date())}</div>
+                </div>
+                <div className='weather-box'>
+                  <div className='temp'>{Math.round(weather.main.temp)}°c</div>
+                  <div className='weather'>{weather.weather[0].main}</div>
+                </div>
               </div>
-              <div className='date'>{dateBuilder(new Date())}</div>
-            </div>
-            <div className='weather-box'>
-              <div className='temp'>
-                {Math.round(weather.main.temp * 10) / 10}°c
+              <div className='side2'>
+                <div className='wind-box'>
+                  <div className='wind-direction-text'>Wind Direction</div>
+                  <div className='direction-north'>N</div>
+                  <div className='wind-direction'>
+                    <div
+                      className='wind'
+                      style={{
+                        transform: `rotate(${weather.wind.deg}deg)`,
+                      }}
+                    >
+                      ↑
+                    </div>
+                  </div>
+                  <div className='direction-south'>S</div>
+                  <div className='wind-speed'>{weather.wind.speed} m/s</div>
+                </div>
               </div>
-              <div className='weather'>{weather.weather[0].main}</div>
             </div>
           </>
         ) : (
@@ -123,10 +143,10 @@ function App() {
             <div className='message'>Enter a city name...</div>
           </>
         )}
-        {/* <div className='origin'>
-          Made with love by{' '}
+        <div className='origin'>
+          Made with ❤️ by{' '}
           <a href='https://twitter.com/pandya_dhawal'>Dhawal Pandya</a>
-        </div> */}
+        </div>
       </main>
     </div>
   );
