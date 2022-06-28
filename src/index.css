@@ -151,10 +151,9 @@ main {
   width: 200px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  box-shadow: 3px 6px rgba(50, 50, 70, 0.5);
 
   position: relative;
-  display: inline-block;
+  display: block;
 
   color: #fff;
 
@@ -164,8 +163,16 @@ main {
 }
 
 .wind {
+  font-size: 15vh;
   margin: auto;
-  padding: 0;
+  text-align: center;
+  line-height: 60%;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  box-sizing: border-box;
 }
 
 .origin {
@@ -212,7 +219,7 @@ main {
     text-align: center;
   }
   .side1 {
-    padding-top: 5%;
+    padding: 7vh 8vh 2vh 0;
     left: 15%;
   }
   .side2 {
@@ -225,7 +232,7 @@ main {
 }
 @media screen and (min-width: 1000px) {
   .side1 {
-    padding-top: 5%;
+    padding: 7vh 8vh 2vh 0;
     left: 20%;
   }
   .side2 {

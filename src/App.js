@@ -129,7 +129,7 @@ function App() {
                         transform: `rotate(${weather.wind.deg}deg)`,
                       }}
                     >
-                      ↑
+                      ^
                     </div>
                   </div>
                   <div className='direction-south'>S</div>
